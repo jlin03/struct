@@ -6,6 +6,7 @@
 #include "headers.h"
 
 int main() {
+    srand(time(NULL));
     char s[10] = "replaced";
     struct slength x = getRandom();
     printStruct(x);

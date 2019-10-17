@@ -6,7 +6,6 @@
 #include "headers.h"
 
 struct slength getRandom() {
-	srand(time(NULL));
 	int l = rand()%20;
 	char s[20] = " ";
 	int i = 0;
@@ -17,7 +16,7 @@ struct slength getRandom() {
 	struct slength n;
 	n.string = strdup(s);
 	n.length = strlen(s);
-	
+
 	return n;
 }
 
